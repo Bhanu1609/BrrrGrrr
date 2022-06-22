@@ -1,15 +1,15 @@
 function up1(max) {
+    
     var cost = parseFloat(document.getElementById("bill").innerText);
     document.getElementById("myNumber1").value = parseInt(document.getElementById("myNumber1").value) + 1;
     if (document.getElementById("myNumber1").value > parseInt(max)) {
         document.getElementById("myNumber1").value = max;
-        cost = cost + 0; 
+        cost = cost + 0;
     } else {
         cost = cost + 10;
     }
        
     bill.innerText = cost;
-    
     var quantity = parseInt(document.getElementById("tomato").innerText);
     if(parseInt(document.getElementById("myNumber1").value) === 10) {
         quantity = 10;
@@ -19,8 +19,8 @@ function up1(max) {
     
     tomato.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText ="Rs."  + payment + "/-";
+    
+    pay.innerText ="Rs."  + cost + "/-";
     
 }
 function down1(min) {
@@ -29,6 +29,7 @@ function down1(min) {
     if (document.getElementById("myNumber1").value < parseInt(min)) {
         document.getElementById("myNumber1").value = min;
         cost = cost - 0;
+        
     } else {
         cost = cost - 10;
     }
@@ -44,8 +45,8 @@ function down1(min) {
     
     tomato.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    
+    pay.innerText = "Rs."  + cost + "/-";
    
 }
 
@@ -69,8 +70,8 @@ function up2(max) {
     
     spinach.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    
+    pay.innerText = "Rs."  + cost + "/-";
     
 }
 function down2(min) {
@@ -93,8 +94,8 @@ function down2(min) {
     
     spinach.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up3(max) {
@@ -117,8 +118,8 @@ function up3(max) {
     
     cabbage.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down3(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -140,8 +141,7 @@ function down3(min) {
     
     cabbage.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up4(max) {
@@ -164,8 +164,7 @@ function up4(max) {
     
     onions.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down4(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -187,8 +186,7 @@ function down4(min) {
     
     onions.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up5(max) {
@@ -211,8 +209,7 @@ function up5(max) {
     
     jalapeno.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down5(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -234,8 +231,7 @@ function down5(min) {
     
     jalapeno.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up6(max) {
@@ -258,8 +254,7 @@ function up6(max) {
     
     leafLettuce.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down6(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -281,8 +276,7 @@ function down6(min) {
     
     leafLettuce.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up7(max) {
@@ -305,8 +299,7 @@ function up7(max) {
     
     mushroom.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down7(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -328,8 +321,7 @@ function down7(min) {
     
     mushroom.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up8(max) {
@@ -352,8 +344,7 @@ function up8(max) {
     
     cucumber.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down8(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -375,8 +366,7 @@ function down8(min) {
     
     cucumber.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up9(max) {
@@ -399,8 +389,7 @@ function up9(max) {
     
     cheddar.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down9(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -422,8 +411,7 @@ function down9(min) {
     
     cheddar.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up10(max) {
@@ -446,8 +434,7 @@ function up10(max) {
     
     mozarella.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down10(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -469,8 +456,7 @@ function down10(min) {
     
     mozarella.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up11(max) {
@@ -493,8 +479,7 @@ function up11(max) {
     
     parmesan.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down11(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -516,8 +501,7 @@ function down11(min) {
     
     parmesan.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up12(max) {
@@ -540,8 +524,7 @@ function up12(max) {
     
     chicken.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down12(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -563,8 +546,7 @@ function down12(min) {
     
     chicken.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up13(max) {
@@ -587,8 +569,7 @@ function up13(max) {
     
     pork.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down13(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -610,8 +591,7 @@ function down13(min) {
     
     pork.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up14(max) {
@@ -634,8 +614,7 @@ function up14(max) {
     
     bacon.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down14(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -657,8 +636,7 @@ function down14(min) {
     
     bacon.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up15(max) {
@@ -681,8 +659,7 @@ function up15(max) {
     
     turkey.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down15(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -704,8 +681,7 @@ function down15(min) {
     
     turkey.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up16(max) {
@@ -728,8 +704,7 @@ function up16(max) {
     
     plain.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down16(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -751,8 +726,7 @@ function down16(min) {
     
     plain.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up17(max) {
@@ -775,8 +749,7 @@ function up17(max) {
     
     sesame.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down17(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -798,8 +771,7 @@ function down17(min) {
     
     sesame.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up18(max) {
@@ -821,8 +793,7 @@ function up18(max) {
     
     engMuffin.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down18(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -844,8 +815,7 @@ function down18(min) {
     
     engMuffin.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up19(max) {
@@ -868,8 +838,7 @@ function up19(max) {
     
     pretzel.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down19(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -891,8 +860,7 @@ function down19(min) {
     
     pretzel.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 
 function up20(max) {
@@ -915,8 +883,7 @@ function up20(max) {
     
     mayo.innerText = quantity;
     
-    var payment = cost + 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }
 function down20(min) {
     var cost = parseFloat(document.getElementById("bill").innerText);
@@ -938,6 +905,5 @@ function down20(min) {
     
     mayo.innerText = quantity;
     
-    var payment = cost - 30;
-    pay.innerText = "Rs."  + payment + "/-";
+    pay.innerText = "Rs."  + cost + "/-";
 }

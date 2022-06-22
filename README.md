@@ -2,5 +2,4 @@ BrrrGrrr - A online website that sells burgers. It suggests users to not only cu
 burgers by adding or removing ingredients but also create their own burger from the ingredients
 in stock.
 
-It is a front-end project.
-Not yet completed.
+It is a front-end project using HTML, CSS, Bootstrap, JavaScript.
